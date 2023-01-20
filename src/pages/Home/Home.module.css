@@ -1,0 +1,17 @@
+.cards_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--gray);
+  gap: 15px;
+
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+}
+
+.link_card_logement {
+  text-decoration: none;
+}
