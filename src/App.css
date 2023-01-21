@@ -8,10 +8,10 @@
 }
 
 main {
-  width: 95%;
   display: flex;
   flex-direction: column;
   margin: auto;
+  padding: 2rem;
 }
 body {
   margin: 0;
