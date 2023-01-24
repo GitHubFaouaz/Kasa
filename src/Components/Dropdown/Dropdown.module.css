@@ -1,0 +1,39 @@
+.dropdown {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 5px 0 5px;
+  padding: 0 2rem;
+}
+
+.dropdown_containeTitleChevron {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--rouge);
+  padding: 0px 2rem;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.dropdown__title {
+  margin: 5px;
+}
+.dropdown_containeTitleChevron img {
+  height: 10px;
+}
+.dropdown p {
+  background: var(--gray);
+  margin: 0;
+}
+.chevronFalse {
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+}
+.chevronTrue {
+  transform: rotate(180deg);
+  transition: 0.5s ease-in-out;
+}
