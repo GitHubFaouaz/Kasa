@@ -7,7 +7,6 @@ function DropDown(props) {
 
   const toggleState = () => {
     setToggle(!toggle);
-    // setToggle((prev) => !prev);
   };
 
   return (
@@ -22,13 +21,7 @@ function DropDown(props) {
         />
       </div>
 
-      <div
-        style={
-          toggle
-            ? { height: "auto", transition: "1s" }
-            : { height: "0", opacity: 0 }
-        }
-      >
+      <div className={toggle ? style.heightAuto : style.heightNull}>
         <p>{props.text}</p>
       </div>
     </div>

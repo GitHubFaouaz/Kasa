@@ -6,7 +6,7 @@ function Nav() {
       <NavLink to="/" className={style.nav_header_link}>
         Accueil
       </NavLink>
-      <NavLink to="/about" className={style.nav_header_link}>
+      <NavLink to="/Apropos" className={style.nav_header_link}>
         A Propos
       </NavLink>
     </nav>

@@ -1,0 +1,25 @@
+.containe_carrousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.containe_arrow {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.containe_images {
+  /* position: absolute; */
+}
+
+.img {
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+.active {
+  flex: 0 0 100%;
+}

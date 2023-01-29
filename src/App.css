@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
 :root {
   --rouge: #ff6060;
   --white: #ffffff;
@@ -5,13 +7,14 @@
 }
 * {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 main {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 2rem;
+  padding: 2rem 5rem;
 }
 body {
   margin: 0;

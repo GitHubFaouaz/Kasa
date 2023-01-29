@@ -1,3 +1,7 @@
+.link_card_logement {
+  text-decoration: none;
+}
+
 .article_card {
   width: 340px;
   height: 340px;

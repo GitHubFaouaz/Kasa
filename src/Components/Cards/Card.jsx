@@ -1,13 +1,17 @@
 import style from "./Card.module.css";
-
-function Card({ cover, title }) {
+import { Link } from "react-router-dom";
+function Card({ cover, title, id }) {
   return (
-    <article className={style.article_card}>
-      <img src={cover} alt="cover" className={style.article_card_img} />
-      <div className={style.article_contaner_title}>
-        <p className={style.article_title}>{title}</p>
-      </div>
-    </article>
+    <div className={style.card_logement}>
+      <Link className={style.link_card_logement} to={`/logement/${id}`}>
+        <article className={style.article_card}>
+          <img src={cover} alt={title} className={style.article_card_img} />
+          <div className={style.article_contaner_title}>
+            <p className={style.article_title}>{title}</p>
+          </div>
+        </article>
+      </Link>
+    </div>
   );
 }
 

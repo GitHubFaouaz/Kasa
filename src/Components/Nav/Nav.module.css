@@ -10,7 +10,11 @@
   text-decoration: none;
   color: var(--rouge);
   font-size: 20px;
+  font-weight: 700;
 }
 .nav_header_link:hover {
+  text-decoration: underline 3px solid var(--rouge);
+}
+.nav_header_link:focus {
   text-decoration: underline 3px solid var(--rouge);
 }
