@@ -1,0 +1,11 @@
+.tag_Container {
+  display: flex;
+  gap: 5px;
+}
+
+.tag {
+  background: var(--rouge);
+  border-radius: 10px;
+  padding: 3px 25px;
+  color: var(--white);
+}

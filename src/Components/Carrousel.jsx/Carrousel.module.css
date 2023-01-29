@@ -4,14 +4,17 @@
   align-items: center;
   overflow: hidden;
 }
+.containe_images {
+  /* display: flex;
+  scroll-behavior: smooth;
+*/
+}
+
 .containe_arrow {
   position: absolute;
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-.containe_images {
-  /* position: absolute; */
 }
 
 .img {
@@ -22,4 +25,14 @@
 }
 .active {
   flex: 0 0 100%;
+  width: 100%;
+}
+.displayNone {
+  display: none;
+}
+
+.rightArrow,
+.leftArrow {
+  cursor: pointer;
+  z-index: 100;
 }
