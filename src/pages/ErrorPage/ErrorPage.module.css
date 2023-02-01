@@ -2,7 +2,7 @@
   color: var(--rouge);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+
   align-items: center;
   margin-bottom: 6.5rem;
 }
@@ -15,10 +15,25 @@
 }
 .errorText {
   font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
 }
 .linkHome {
   font-size: 25px;
-  text-decoration: none;
+
   color: var(--rouge);
   margin-top: 5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .error404 {
+    font-size: 5rem;
+  }
+  .errorText {
+    font-size: 30px;
+    width: 475px;
+  }
+  .linkHome {
+    font-size: 20px;
+  }
 }

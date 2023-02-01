@@ -18,3 +18,9 @@
 .nav_header_link:focus {
   text-decoration: underline 3px solid var(--rouge);
 }
+
+@media screen and (max-width: 767px) {
+  .nav_header_link {
+    font-size: 15px;
+  }
+}

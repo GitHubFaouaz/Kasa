@@ -11,3 +11,20 @@
 
   border-radius: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  .cards_container {
+    background-color: transparent;
+    gap: 30px;
+  }
+}
+
+/*  tablette */
+@media only screen and (min-width: 768px) {
+  .cards_container {
+    background-color: var(--gray);
+  }
+}
+
+/*  descktop*/
+@media only screen and (min-width: 1200px) {
+}

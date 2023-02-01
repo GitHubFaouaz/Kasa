@@ -16,6 +16,13 @@ main {
   margin: auto;
   padding: 2rem 5rem;
 }
+
 body {
   margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  main {
+    padding: 2rem 2rem;
+  }
 }

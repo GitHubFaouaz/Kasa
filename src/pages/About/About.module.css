@@ -5,3 +5,9 @@
   align-items: center;
   margin: 1rem 0;
 }
+
+@media only screen and (max-width: 767px) {
+  .container_dropdown {
+    margin: 1rem 0 5rem;
+  }
+}

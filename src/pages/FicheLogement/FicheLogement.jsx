@@ -1,21 +1,34 @@
 import style from "./FicheLogement.module.css";
 import dataLogements from "../../datas/logements.json";
 import { Navigate, useParams } from "react-router-dom";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Carrousel from "../../Components/Carrousel.jsx/Carrousel";
 import Tag from "../../Components/Tag/Tag";
 import Host from "../../Components/Host/Host";
+import Rate from "../../Components/Rate/Rate";
+import DropDown from "../../Components/Dropdown/Dropdown";
 
 const FicheLogement = () => {
   const params = useParams();
-  const [infoSelectedAppart, setinfoSelectedAppart] = useState("");
-  const pictures = infoSelectedAppart.pictures;
-  const title = infoSelectedAppart.title;
-  const location = infoSelectedAppart.location;
-  const tags = infoSelectedAppart.tags;
-  const hostName = infoSelectedAppart.host.name;
-  const hostImage = infoSelectedAppart.host.picture;
+  const [dataSelectedAppart, setDataSelectedAppart] = useState("");
+  const pictures = dataSelectedAppart.pictures;
+  const title = dataSelectedAppart.title;
+  const location = dataSelectedAppart.location;
+  const tags = dataSelectedAppart.tags;
+  // const hostName = infoSelectedAppart.host.name;
+  // const hostImage = infoSelectedAppart.host.picture;
+  const hostName = dataSelectedAppart.host;
+  const hostImage = dataSelectedAppart.host;
+  const ratings = dataSelectedAppart.rating;
+  const desc = dataSelectedAppart.description;
+  const equipements = dataSelectedAppart.equipments;
+  const equipMaps =
+    dataSelectedAppart &&
+    equipements.map((liste, index) => (
+      <li key={index} className="equipList">
+        {liste}
+      </li>
+    ));
 
   useEffect(() => {
     const dataCard = () => {
@@ -36,7 +49,7 @@ const FicheLogement = () => {
         // window.location = "/404";
         Navigate("/404");
       }
-      setinfoSelectedAppart(idSelectedAppart);
+      setDataSelectedAppart(idSelectedAppart);
 
       // const idSelectedAppart = data.forEach(({id}) => id === params.id);
       // data.find(({ id }) => {
@@ -50,34 +63,33 @@ const FicheLogement = () => {
       //    infoSelectedAppart(data);
       //   }
       // });
-      // data.some(({ id }) => {
-      //   if (id === params.id) {
-      //    infoSelectedAppart(data);
-      //   }
-      //   return true;
-      // });
-      console.log(infoSelectedAppart);
+
+      console.log(dataSelectedAppart);
     };
     dataCard();
-  }, [infoSelectedAppart, params.id]);
+  }, [dataSelectedAppart, params.id]);
 
   return (
-    infoSelectedAppart && (
-      <div className="fiche_logement">
+    dataSelectedAppart && (
+      <div className={style.fiche_logement}>
         <Carrousel pictures={pictures} />
-        <div className="infoLogement">
-          <div className=".title_tags_host_container">
-            <div className=".title_tags_container">
+        <div className={style.infoLogement}>
+          <div className={style.title_tags_host_container}>
+            <div className={style.title_tags_container}>
               <h1>{title}</h1>
               <h2>{location}</h2>
               <Tag tags={tags} />
             </div>
 
-            <div className="host_Rate_container">
-              <Host hostName={hostName} hostImage={hostImage} />
+            <div className={style.host_Rate_container}>
+              <Host hostName={hostName.name} hostImage={hostImage.picture} />
+              <Rate score={ratings} />
             </div>
           </div>
-          <div className="desc_equipement_container"></div>
+          <div className={style.desc_equipement_container}>
+            <DropDown text={desc} title="Description" />
+            <DropDown text={equipMaps} title="Equipements" />
+          </div>
         </div>
       </div>
     )

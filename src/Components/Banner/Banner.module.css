@@ -1,5 +1,6 @@
 /* .banner_container {
 } */
+
 .banner_text_container {
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,12 +10,29 @@
   width: 100%;
   height: 240px;
   border-radius: 2rem;
-  filter: contrast(0.9);
+
   margin: 2rem 0 3rem;
 }
 .banner_text {
-  font-size: 4em;
+  font-size: 50px;
   text-align: center;
   color: var(--white);
-  font-weight: 500;
+  font-weight: 700;
+}
+@media only screen and (max-width: 767px) {
+  .banner_text_container {
+    height: 110px;
+    border-radius: 1rem;
+    justify-content: flex-start;
+  }
+  .banner_text {
+    font-size: 25px;
+    width: 230px;
+    font-weight: 700;
+    text-align: start;
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
 }

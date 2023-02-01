@@ -14,6 +14,7 @@ const About = () => {
           <Dropdown key={id} title={data.title} text={data.text} />
         ))}
       </div>
+      {/* <Dropdown aboutArray={aboutArray} /> */}
     </div>
   );
 };

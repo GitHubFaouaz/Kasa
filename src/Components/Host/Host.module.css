@@ -1,0 +1,27 @@
+.host_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+  margin-bottom: 1rem;
+}
+.host_name {
+  width: 45px;
+  color: var(--rouge);
+  font-size: 18px;
+  font-weight: 700;
+}
+/* 
+.hostImage_container {
+} */
+
+.hostImage {
+  border-radius: 50%;
+  width: 70px;
+}
+
+@media only screen and (max-width: 767px) {
+  .host_container {
+    gap: 35px;
+  }
+}

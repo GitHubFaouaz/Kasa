@@ -4,17 +4,18 @@
   align-items: center;
   overflow: hidden;
 }
-.containe_images {
-  /* display: flex;
+/* .containe_images {
+  display: flex;
   scroll-behavior: smooth;
-*/
-}
+
+} */
 
 .containe_arrow {
   position: absolute;
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 0 1rem;
 }
 
 .img {
@@ -35,4 +36,15 @@
 .leftArrow {
   cursor: pointer;
   z-index: 100;
+}
+
+@media only screen and (max-width: 767px) {
+  .containe_carrousel {
+    height: 250px;
+    border-radius: 1rem;
+  }
+  .rightArrow,
+  .leftArrow {
+    width: 20px;
+  }
 }

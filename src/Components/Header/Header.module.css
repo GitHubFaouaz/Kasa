@@ -5,3 +5,12 @@
   margin: auto;
   padding: 2rem 5rem;
 }
+
+@media only screen and (max-width: 767px) {
+  .header {
+    padding: 2rem 2rem;
+  }
+  .logo_header {
+    width: 10rem;
+  }
+}

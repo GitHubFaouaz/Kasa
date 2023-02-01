@@ -13,8 +13,7 @@ const Carrousel = ({ pictures }) => {
     setCurrent((current + 1) % lengthPictures);
   };
   const prevImage = () => {
-    // setCurrent(( current - 1) % lengthPictures);
-    setCurrent((lengthPictures + current - 1) % lengthPictures);
+    setCurrent((current - 1) % lengthPictures);
   };
 
   // console.log(pictures);
@@ -36,10 +35,6 @@ const Carrousel = ({ pictures }) => {
       </div>
       {pictures.map((images, index) => (
         <div
-          // className={[
-          //   current === index ? style.active : style.displayNone,
-          //   style.containe_images,
-          // ].join(" ")}
           className={current === index ? style.active : style.displayNon}
           key={index}
         >
