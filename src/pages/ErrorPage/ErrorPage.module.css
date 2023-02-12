@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 .errorContaine {
   color: var(--rouge);
   display: flex;
@@ -8,15 +9,16 @@
 }
 
 .error404 {
-  font-size: 9rem;
+  font-size: 250px;
   margin-bottom: 0;
   letter-spacing: 2rem;
   font-weight: 700;
+  /* font-family: "Montserrat"; */
 }
 .errorText {
   font-size: 3rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
 }
 .linkHome {
   font-size: 25px;

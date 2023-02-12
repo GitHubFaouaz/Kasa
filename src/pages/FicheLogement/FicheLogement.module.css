@@ -11,6 +11,11 @@ h2 {
   display: flex;
   justify-content: space-between;
 }
+.tag_Container {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
 
 .host_Rate_container {
   display: flex;
@@ -27,7 +32,7 @@ h2 {
   gap: 3rem;
 }
 
-li {
+.equipList li {
   list-style-type: none;
   margin-bottom: 1rem;
 }
@@ -42,6 +47,7 @@ li {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1rem;
   }
 
   h1 {

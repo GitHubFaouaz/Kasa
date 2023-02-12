@@ -15,9 +15,10 @@ function App() {
       <main id="main">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/logement/:id" element={<FicheLogement />} />
           <Route path="/Apropos" element={<About />} />
+          <Route path="/logement/:id" element={<FicheLogement />} />
           <Route path="*" element={<ErrorPage />} />
+          />
         </Routes>
       </main>
       <Footer />

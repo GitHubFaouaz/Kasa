@@ -3,14 +3,14 @@
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  padding: 2rem 5rem;
+  padding: 2rem 2rem !important;
 }
 
 @media only screen and (max-width: 767px) {
   .header {
-    padding: 2rem 2rem;
+    padding: 2rem 1rem !important;
   }
   .logo_header {
-    width: 10rem;
+    width: 7rem;
   }
 }

@@ -1,73 +1,63 @@
+.card_logement {
+  width: 33%;
+}
+
 .link_card_logement {
   text-decoration: none;
 }
 
 .article_card {
-  width: 340px;
-  height: 340px;
-  box-shadow: inset 20px 20px 20px rgb(0 0 0 / 5%),
-    25px 35px 20px rgb(0 0 0 / 5%), 25px 30px 30px rgb(0 0 0 / 5%),
-    inset -20px -20px 25px rgb(255 255 255 / 90%);
-
-  border-radius: 10px;
-  overflow: hidden;
   position: relative;
+  margin: 1rem;
+  filter: drop-shadow(2px 2px 4px #000);
 }
 
 .article_card_img {
   width: 100%;
-  height: 100%;
+  height: 290px;
   object-fit: cover;
-  filter: contrast(0.9);
+  border-radius: 10px;
+  cursor: pointer;
+  filter: brightness(90%);
 }
-/* .article_card:hover {
+.article_card:hover {
   transform: scale(1.05);
   transition: 0.5s;
-} */
-.article_card_img:hover {
-  transform: scale(1.1);
-  transition: 0.5s;
 }
-.article_title {
+
+.article_contaner_title {
   position: absolute;
   top: 75%;
-  left: 10%;
+  padding-left: 10px;
   color: var(--white);
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 142.6%;
+  text-shadow: 0px 1px 7px #ffffffb8;
 }
 
 @media only screen and (max-width: 767px) {
+  .card_logement {
+    width: 100% !important;
+  }
+
   .article_card {
-    /* width: 365px;
-    height: 280px; */
-    width: 335px;
-    height: 225px;
+    margin: 0 0 1rem;
   }
   .article_title {
-    position: absolute;
-    top: 65%;
-    left: 5%;
-
-    font-weight: 600;
+  }
+  .article_card_img {
+    height: 330px;
   }
 }
 
-/*  tablette */
-@media only screen and (min-width: 768px) {
-  .article_card {
-    width: 500px;
-    height: 300px;
+@media only screen and (max-width: 991px) {
+  .card_logement {
+    width: 50%;
   }
 }
-
-@media only screen and (min-width: 992px) {
-  .article_card {
-    width: 359px;
-    height: 359px;
+@media only screen and (max-width: 1200px) {
+  .card_logement {
+    width: 50%;
   }
-}
-
-@media only screen and (min-width: 1200px) {
 }

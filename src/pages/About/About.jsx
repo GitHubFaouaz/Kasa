@@ -6,6 +6,7 @@ import aboutArray from "../../datas/aboutArray.json";
 import Dropdown from "../../Components/Dropdown/Dropdown";
 
 const About = () => {
+  document.title = "A Propos";
   return (
     <div>
       <Banner image={backgroundAbout} />
@@ -14,7 +15,6 @@ const About = () => {
           <Dropdown key={id} title={data.title} text={data.text} />
         ))}
       </div>
-      {/* <Dropdown aboutArray={aboutArray} /> */}
     </div>
   );
 };

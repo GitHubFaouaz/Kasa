@@ -1,3 +1,8 @@
 .star {
   margin-left: 10px;
 }
+@media only screen and (max-width: 767px) {
+  .star {
+    height: 20px;
+  }
+}

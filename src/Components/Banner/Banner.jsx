@@ -3,12 +3,8 @@ import style from "./Banner.module.css";
 function Banner({ image, text }) {
   return (
     <div className={style.banner_container}>
-      <div
-        className={style.banner_text_container}
-        style={{ backgroundImage: `url(${image})` }}
-      >
-        <div className={style.banner_text}>{text}</div>
-      </div>
+      <img src={image} alt={text} className={style.banner_image} />
+      <h1 className={style.banner_text}>{text}</h1>
     </div>
   );
 }
