@@ -13,7 +13,7 @@ const ErrorPage = () => {
         </p>
 
         <Link to="/" className={style.linkHome}>
-          Retourner sur la page d’accueil
+          Retourner sur la page d'accueil
         </Link>
       </div>
     </>

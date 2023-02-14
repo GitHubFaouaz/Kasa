@@ -11,3 +11,11 @@
     margin: 1rem 0 5rem;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .card_logement {
+    width: 50%;
+  }
+  .container_dropdown {
+    margin: 1rem 0 5rem;
+  }
+}

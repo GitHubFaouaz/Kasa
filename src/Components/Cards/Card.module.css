@@ -33,7 +33,6 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 142.6%;
-  text-shadow: 0px 1px 7px #ffffffb8;
 }
 
 @media only screen and (max-width: 767px) {
@@ -44,8 +43,7 @@
   .article_card {
     margin: 0 0 1rem;
   }
-  .article_title {
-  }
+
   .article_card_img {
     height: 330px;
   }

@@ -28,7 +28,7 @@
 @media only screen and (max-width: 767px) {
   .banner_container {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .banner_image {
     height: 190px;

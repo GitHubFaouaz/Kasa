@@ -2,7 +2,6 @@ import style from "./Carrousel.module.css";
 import { useState } from "react";
 import left from "../../assets/images/vector-left.svg";
 import right from "../../assets/images/vector-right.svg";
-
 import React from "react";
 
 const Carrousel = ({ pictures }) => {
@@ -53,7 +52,6 @@ const Carrousel = ({ pictures }) => {
           {pictures.map((_, index) => (
             <li
               key={index}
-              // className={style.bullet}
               className={index === current ? style.active_bullet : ""}
               onClick={() => setCurrent(index)}
             ></li>

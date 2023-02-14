@@ -18,7 +18,8 @@ main {
 }
 
 body {
-  margin: 0;
+  margin: auto;
+  min-height: 100%;
 }
 
 @media only screen and (max-width: 767px) {

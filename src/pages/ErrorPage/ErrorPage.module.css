@@ -3,7 +3,6 @@
   color: var(--rouge);
   display: flex;
   flex-direction: column;
-
   align-items: center;
   margin-bottom: 6.5rem;
 }
@@ -13,7 +12,6 @@
   margin-bottom: 0;
   letter-spacing: 2rem;
   font-weight: 700;
-  /* font-family: "Montserrat"; */
 }
 .errorText {
   font-size: 3rem;

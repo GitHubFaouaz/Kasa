@@ -1,4 +1,4 @@
-import "./App.css";
+import style from "./App.module.css";
 import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Home from "./pages/Home/Home";
@@ -9,10 +9,10 @@ import FicheLogement from "./pages/FicheLogement/FicheLogement";
 
 function App() {
   return (
-    <div className="App">
+    <div className={style.App}>
       <Header />
 
-      <main id="main">
+      <main id={style.main}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Apropos" element={<About />} />
