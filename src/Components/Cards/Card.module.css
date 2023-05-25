@@ -18,7 +18,6 @@
   object-fit: cover;
   border-radius: 10px;
   cursor: pointer;
-  filter: brightness(90%);
 }
 .article_card:hover {
   transform: scale(1.05);
@@ -27,12 +26,23 @@
 
 .article_contaner_title {
   position: absolute;
-  top: 75%;
+  top: 48%;
   padding-left: 10px;
   color: var(--white);
   font-size: 18px;
   font-weight: 700;
   line-height: 142.6%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7) 13%,
+    rgba(0, 212, 255, 0) 70%
+  );
+
+  height: 150px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
 }
 
 @media only screen and (max-width: 767px) {

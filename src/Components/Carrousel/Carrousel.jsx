@@ -43,21 +43,23 @@ const Carrousel = ({ pictures }) => {
           )}
         </div>
       ))}
+      {lengthPictures > 1 && (
+        <div className={style.containe_number_bullet}>
+          <span className={style.pictureNumber}>
+            {current + 1}/{lengthPictures}
+          </span>
 
-      <div className={style.containe_number_bullet}>
-        <span className={style.pictureNumber}>
-          {current + 1}/{lengthPictures}
-        </span>
-        <ol className={style.containe_bullet}>
-          {pictures.map((_, index) => (
-            <li
-              key={index}
-              className={index === current ? style.active_bullet : ""}
-              onClick={() => setCurrent(index)}
-            ></li>
-          ))}
-        </ol>
-      </div>
+          <ol className={style.containe_bullet}>
+            {pictures.map((_, index) => (
+              <li
+                key={index}
+                className={index === current ? style.active_bullet : ""}
+                onClick={() => setCurrent(index)}
+              ></li>
+            ))}
+          </ol>
+        </div>
+      )}
     </div>
   );
 };
