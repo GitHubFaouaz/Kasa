@@ -13,7 +13,7 @@ function App() {
       <Header />
 
       <main id={style.main}>
-        <Router basename="/Kasa">
+        <Router basename="https://githubfaouaz.github.io/Kasa/">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Apropos" element={<About />} />
