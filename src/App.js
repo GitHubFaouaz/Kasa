@@ -1,5 +1,5 @@
 import style from "./App.module.css";
-import { Routes, Route, Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -19,16 +19,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Apropos" element={<About />} />
             <Route path="/logement/:id" element={<FicheLogement />} />
-
-            {<Route
+            {/* <Route
               path="https://githubfaouaz.github.io/Kasa/"
-              // element={<Home />}
-              element={<Navigate to="/" />}
-            /> ? (
-              <Route path="/" element={<Home />} />
-            ) : (
-              <Route path="*" element={<ErrorPage />} />
-            )}
+              element={<Home />}
+            /> */}
+            <Route path="*" element={<ErrorPage />} />
           </Routes>
         </Router>
       </main>
