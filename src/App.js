@@ -19,13 +19,16 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Apropos" element={<About />} />
             <Route path="/logement/:id" element={<FicheLogement />} />
-            <Route path="*" element={<ErrorPage />} />
-            <Route
-              // path="https://githubfaouaz.github.io/Kasa/"
-              path="https://githubfaouaz.github.io"
+
+            {<Route
+              path="https://githubfaouaz.github.io/Kasa/"
               // element={<Home />}
               element={<Navigate to="/" />}
-            />
+            /> ? (
+              <Route path="/" element={<Home />} />
+            ) : (
+              <Route path="*" element={<ErrorPage />} />
+            )}
           </Routes>
         </Router>
       </main>
