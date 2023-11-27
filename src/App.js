@@ -6,6 +6,7 @@ import About from "./pages/About/About";
 import Footer from "./Components/Footer/Footer";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import FicheLogement from "./pages/FicheLogement/FicheLogement";
+import { Navigate } from "react-router-dom";
 
 function App() {
   return (
@@ -15,10 +16,14 @@ function App() {
       <main id={style.main}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="https://githubfaouaz.github.io/" element={<Home />} />
           <Route path="/Apropos" element={<About />} />
           <Route path="/logement/:id" element={<FicheLogement />} />
           <Route path="*" element={<ErrorPage />} />
+          <Route
+            path="https://githubfaouaz.github.io/Kasa/"
+            // element={<Home />}
+            element={<Navigate to="/" />}
+          />
         </Routes>
       </main>
       <Footer />
