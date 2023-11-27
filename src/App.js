@@ -15,6 +15,10 @@ function App() {
       <main id={style.main}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route
+            path="https://GitHubFaouaz.githup.io/Kasa"
+            element={<Home />}
+          />
           <Route path="/Apropos" element={<About />} />
           <Route path="/logement/:id" element={<FicheLogement />} />
           <Route path="*" element={<ErrorPage />} />
