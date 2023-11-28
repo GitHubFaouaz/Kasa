@@ -5,7 +5,7 @@ import About from "./pages/About/About";
 import Footer from "./Components/Footer/Footer";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import FicheLogement from "./pages/FicheLogement/FicheLogement";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -14,17 +14,20 @@ function App() {
 
       <main id={style.main}>
         <Routes>
+          {/* Redirige vers la page d'accueil si l'URL est "https://GitHubFaouaz.githup.io/Kasa" */}
+          {window.location.href === "https://GitHubFaouaz.githup.io/Kasa" && (
+            <Navigate to="/" />
+          )}
           <Route path="/" element={<Home />} />
           <Route path="/Apropos" element={<About />} />
           <Route path="/logement/:id" element={<FicheLogement />} />
 
-          {/* Ajoutez une condition pour l'exception */}
-          {window.location.href === "https://GitHubFaouaz.githup.io/Kasa" ? (
+          {/* {window.location.href === "https://GitHubFaouaz.githup.io/Kasa" ? (
             <Route path="/" element={<Home />} />
-          ) : (
-            // La route par défaut si l'exception n'est pas satisfaite
-            <Route path="*" element={<ErrorPage />} />
-          )}
+          ) : ( */}
+
+          <Route path="*" element={<ErrorPage />} />
+          {/* )} */}
         </Routes>
       </main>
       <Footer />
