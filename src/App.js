@@ -21,7 +21,17 @@ function App() {
           />
           <Route path="/Apropos" element={<About />} />
           <Route path="/logement/:id" element={<FicheLogement />} />
-          <Route path="*" element={<ErrorPage />} />
+          {/* Ajoutez une condition pour l'exception */}
+          {window.location.href === "https://GitHubFaouaz.githup.io/Kasa" ? (
+            <Route
+              path="https://GitHubFaouaz.githup.io/Kasa"
+              element={<Home />}
+            />
+          ) : (
+            // La route par défaut si l'exception n'est pas satisfaite
+            <Route path="*" element={<ErrorPage />} />
+          )}
+          {/* <Route path="*" element={<ErrorPage />} /> */}
         </Routes>
       </main>
       <Footer />
