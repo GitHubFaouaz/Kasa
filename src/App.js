@@ -16,7 +16,8 @@ function App() {
         <Routes>
           {/* Redirige vers la page d'accueil si l'URL est "https://GitHubFaouaz.githup.io/Kasa" */}
           {/* window.location.pathname === "/home"; */}
-          {window.location.href === "https://GitHubFaouaz.githup.io/Kasa" ? (
+          {window.location.pathname ===
+          "https://GitHubFaouaz.githup.io/Kasa" ? (
             <Navigate to="/" />
           ) : (
             <>
