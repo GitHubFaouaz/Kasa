@@ -26,7 +26,7 @@ function App() {
             <Navigate to="/" />
           )} */}
 
-          <Route path="/" element={<Home />} />
+          <Route path="https://githubfaouaz.github.io/" element={<Home />} />
           <Route path="/Apropos" element={<About />} />
           <Route path="/logement/:id" element={<FicheLogement />} />
 
