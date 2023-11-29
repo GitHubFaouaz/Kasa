@@ -22,7 +22,8 @@ function App() {
           ) : ( */}
           {window.location.pathname ===
             "https://GitHubFaouaz.githup.io/Kasa" && (
-            <Route path="https://githubfaouaz.github.io/" element={<Home />} />
+            // <Route path="" element={<Home />} />
+            <Navigate to="/" />
           )}
 
           <Route path="/" element={<Home />} />
