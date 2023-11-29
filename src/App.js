@@ -20,17 +20,17 @@ function App() {
           "https://GitHubFaouaz.githup.io/Kasa" ? (
             <Route path="/" element={<Home />} />
           ) : ( */}
-          {window.location.pathname ===
+          {/* {window.location.pathname ===
             "https://GitHubFaouaz.githup.io/Kasa" && (
             // <Route path="" element={<Home />} />
             <Navigate to="/" />
-          )}
+          )} */}
 
           <Route path="/" element={<Home />} />
           <Route path="/Apropos" element={<About />} />
           <Route path="/logement/:id" element={<FicheLogement />} />
 
-          <Route path="*" element={<ErrorPage />} />
+          {/* <Route path="*" element={<ErrorPage />} /> */}
         </Routes>
       </main>
       <Footer />
