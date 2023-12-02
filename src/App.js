@@ -14,26 +14,10 @@ function App() {
 
       <main id={style.main}>
         <Routes>
-          {/* Redirige vers la page d'accueil si l'URL est "https://GitHubFaouaz.githup.io/Kasa" */}
-          {/* window.location.pathname === "/home"; */}
-          {/* {window.location.pathname ===
-          "https://GitHubFaouaz.githup.io/Kasa" ? (
-            <Route path="/" element={<Home />} />
-          ) : ( */}
-          {/* {window.location.pathname ===
-            "https://GitHubFaouaz.githup.io/Kasa" && (
-            // <Route path="" element={<Home />} />
-            <Navigate to="/" />
-          )} */}
-
-          <Route
-            path="https://githubfaouaz.github.io/Kasa/"
-            element={<Home />}
-          />
+          <Route path="/" element={<Home />} />
           <Route path="/Apropos" element={<About />} />
           <Route path="/logement/:id" element={<FicheLogement />} />
-
-          {/* <Route path="*" element={<ErrorPage />} /> */}
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </main>
       <Footer />
