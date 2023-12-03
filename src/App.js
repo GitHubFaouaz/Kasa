@@ -5,7 +5,7 @@ import About from "./pages/About/About";
 import Footer from "./Components/Footer/Footer";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import FicheLogement from "./pages/FicheLogement/FicheLogement";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
